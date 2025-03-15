@@ -1,0 +1,101 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgb(183, 183, 242);
+    text-align: center;
+}
+
+
+main {
+    display: flex;
+    justify-content: space-between;  
+    margin: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color:#ddd;
+    padding: 10px;
+}
+
+nav a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-decoration:none;
+    border-radius: 10px 10px;
+    padding: 5px 10px;
+
+}
+
+
+nav a:hover {
+    color: black;
+    background-color: rgb(183, 183, 242);
+    text-decoration: underline;
+}
+
+
+.sidebar {
+    width: 30%;  
+    padding: 20px;
+    background-color: #f0f0f0;  
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.sidebar p {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #333;
+}
+
+
+
+.schedule {
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    caption-side: top;
+}
+
+.schedule th, .schedule td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.schedule thead tr {
+    background-color: rgb(183, 183, 242);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.schedule tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+.schedule tfoot tr {
+    background-color: rgb(225, 225, 255);
+}
+
+.schedule th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f2f2f2;
+    margin-top: 20px;
+}
