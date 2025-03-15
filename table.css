@@ -38,7 +38,7 @@ nav a {
 
 nav a:hover {
     color: black;
-    background-color: #faa8a8;
+    background-color: rgb(183, 183, 242);
     text-decoration: underline;
 }
 
@@ -97,7 +97,7 @@ nav a:hover {
 
 footer {
     text-align: center;
-    padding: 10px;
+    padding: 2px;
     background-color: #f2f2f2;
-    margin-top: 20px;
+    margin-top: auto;
 }
