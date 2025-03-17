@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="forms.css">
+
+</head>
+<body>
+    <header>
+        <h1>Web Design Engagement - Form</h1>
+    </header>
+
+    <main>
+        <form action="processing.html" method="post">
+
+            <div class="form-row"> 
+                <label for="Full name">Full  Name</label>
+                 <input type="fullname" placeholder="Full Name">
+            </div>
+
+            <div class="form-row"> 
+                <label for="email">Email</label>
+                <input type="email" name="email" value="ok@byuh.edu" id="">
+            </div>
+
+            <div>
+                Password: <input type="password" name=" password" id="pass" placeholder="Password"> 
+            </div>
+
+            <blockquote> 
+                <div>
+                    <label for="state">State</label>
+                    <select name="state" id="state">
+                        <option value="blank"></option>
+                        <option value="Co">Colorado</option>
+                        <option value="HI">Hawaii</option>
+                        <option value="UT">Utah</option>
+                        <option value="FL">Florida</option>
+                    </select>
+                </div>
+
+                <div class="form-row"> 
+                    <input type="submit">
+                </div>
+        </blockquote>
+
+        <blockquote>
+            <div> 
+                <div> Year in School </div>
+                    <label><input type="radio" name="year"  value="Freshman">Freshman</label>
+                    <label><input type="radio" name="year"  value="sophomore">Sophomore</label>
+            </div>
+        </blockquote>
+
+        </form>
+
+        
+        <ol>
+            <li>The form tag has an "action" attribute. What does it do?</li>
+            <p> Specifies the URL where form data is sent.</p>
+            <li>  form tag has a "method" attribute. What does it do?</li>
+            <P>method: Specifies how the form data is sent (GET or POST).
+            </P>
+            <li> What is the difference between a "POST" and a "GET"?</li>
+            <p>GET: Sends data in the URL, visible, for retrieving data.<br>
+                POST: Sends data in the request body, hidden, for submitting or modifying data.</p>
+        </ol>
+        <hr>
+    </main>
+
+    <footer>
+        <p>&copy2025 Jhonattan Rabello </p>
+    </footer>
+</body>
+</html>
