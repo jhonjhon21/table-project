@@ -14,60 +14,69 @@
 
     <main>
         <form action="processing.html" method="post">
+            <fieldset>
+                <legend>Account Info</legend>
+                    <div class="form-row"> 
+                        <label for="Full name">Full  Name</label>
+                        <input type="fullname" placeholder="Full Name">
+                    </div>
 
-            <div class="form-row"> 
-                <label for="Full name">Full  Name</label>
-                 <input type="fullname" placeholder="Full Name">
-            </div>
+                    <div class="form-row"> 
+                        <label for="email">Email</label>
+                        <input type="email" name="email" value="ok@byuh.edu" id="">
+                    </div>
 
-            <div class="form-row"> 
-                <label for="email">Email</label>
-                <input type="email" name="email" value="ok@byuh.edu" id="">
-            </div>
+                    <div class="form-row">
+                        <label for="password">Password</label>
+                       <input type="password" name=" password" id="pass" placeholder="Password"> 
+                    </div>
 
-            <div>
-                Password: <input type="password" name=" password" id="pass" placeholder="Password"> 
-            </div>
+                    <div class="form-row">
 
-            <blockquote> 
-                <div>
-                    <label for="state">State</label>
-                    <select name="state" id="state">
-                        <option value="blank"></option>
-                        <option value="Co">Colorado</option>
-                        <option value="HI">Hawaii</option>
-                        <option value="UT">Utah</option>
-                        <option value="FL">Florida</option>
-                    </select>
-                </div>
+                        <label for="state">State</label>
+                        <select name="state" id="state">
+                            <option value="blank"></option>
+                            <option value="Co">Colorado</option>
+                            <option value="HI">Hawaii</option>
+                            <option value="UT">Utah</option>
+                            <option value="FL">Florida</option>
+                        </select>
+                    </div>
 
-                <div class="form-row"> 
-                    <input type="submit">
-                </div>
-        </blockquote>
 
-        <blockquote>
-            <div> 
-                <div> Year in School </div>
-                    <label><input type="radio" name="year"  value="Freshman">Freshman</label>
-                    <label><input type="radio" name="year"  value="sophomore">Sophomore</label>
-            </div>
-        </blockquote>
+                    <div class="radio-row">
+                        <div> Year in School </div>
+                        <label><input type="radio" name="year"  value="Freshman">Freshman</label>
+                        <label><input type="radio" name="year"  value="sophomore">Sophomore</label>
+                    </div>
+                   
 
+                    <div class="radio-row">
+                        <div class="form-spacer"></div>
+                        <label><input type="checkbox" name="agree" id="agree" checked>Remember me</label>
+                    </div>
+ 
+
+                    <div class="form-row">
+                        <label for="comments">Comments</label>
+                        <textarea name="comments" id="comments"></textarea>
+                    </div>
+
+                    
+                    <div class="form-row"> 
+                        <div class="form-spacer"></div>
+                        <input type="submit">
+                    </div>
+                    
+            </fieldset>
         </form>
 
-        
         <ol>
-            <li>The form tag has an "action" attribute. What does it do?</li>
-            <p> Specifies the URL where form data is sent.</p>
-            <li>  form tag has a "method" attribute. What does it do?</li>
-            <P>method: Specifies how the form data is sent (GET or POST).
-            </P>
-            <li> What is the difference between a "POST" and a "GET"?</li>
-            <p>GET: Sends data in the URL, visible, for retrieving data.<br>
-                POST: Sends data in the request body, hidden, for submitting or modifying data.</p>
+            <li>What are different ways to style your form?</li>
+            <p></p>
+            <li>Why does the professor like to use flex?</li>
+            <p></p>
         </ol>
-        <hr>
     </main>
 
     <footer>
