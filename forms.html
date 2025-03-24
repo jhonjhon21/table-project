@@ -13,22 +13,26 @@
     </header>
 
     <main>
-        <form action="processing.html" method="post">
+        <form action="processing.html" method="get" id="myForm">
             <fieldset>
                 <legend>Account Info</legend>
                     <div class="form-row"> 
                         <label for="Full name">Full  Name</label>
-                        <input type="fullname" placeholder="Full Name">
+                        <input type="fullname" placeholder="Full Name" id="fullname">
                     </div>
 
                     <div class="form-row"> 
                         <label for="email">Email</label>
-                        <input type="email" name="email" value="ok@byuh.edu" id="">
+                        <input type="email" name="email" value="ok@byuh.edu" id="email">
                     </div>
 
                     <div class="form-row">
                         <label for="password">Password</label>
-                       <input type="password" name=" password" id="pass" placeholder="Password"> 
+                       <input type="password" name=" password" id="password" placeholder="Password"> 
+                    </div>
+
+                    <div class="form-row">
+                        <label for="age"></label>
                     </div>
 
                     <div class="form-row">
@@ -71,16 +75,45 @@
             </fieldset>
         </form>
 
-        <ol>
-            <li>What are different ways to style your form?</li>
-            <p>Use padding, margins, borders, shadows, font styles, and hover/focus effects for a clean, interactive layout.</p>
-            <li>Why does the professor like to use flex?</li>
-            <p>Flexbox makes layout alignment simple, responsive, and efficient with minimal code.</p>
-        </ol>
     </main>
 
     <footer>
         <p>&copy2025 Jhonattan Rabello </p>
     </footer>
+    <script>
+        document.getElementById('myForm').addEventListener('submit', function(evnet){
+            event.preventDefault();
+
+            const fullname = document.getElementById('fullname').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const state = document.getElementById('state').value;
+
+
+            if (!fullname) {
+                alert("you need to digit your name.");
+                return;
+            }
+
+            
+            if (!password) {
+                alert("you need to digit your password.");
+                return;
+            }
+
+
+            const formData = {
+                fullname: fullname,
+                email: email,
+                password: password
+            };
+
+            console.log(formData)
+        });
+
+
+
+    </script>
+
 </body>
 </html>
