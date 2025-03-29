@@ -13,26 +13,22 @@
     </header>
 
     <main>
-        <form action="processing.html" method="get" id="myForm">
+        <form action="processing.html" method="post">
             <fieldset>
                 <legend>Account Info</legend>
                     <div class="form-row"> 
                         <label for="Full name">Full  Name</label>
-                        <input type="fullname" placeholder="Full Name" id="fullname">
+                        <input type="fullname" placeholder="Full Name">
                     </div>
 
                     <div class="form-row"> 
                         <label for="email">Email</label>
-                        <input type="email" name="email" value="ok@byuh.edu" id="email">
+                        <input type="email" name="email" value="ok@byuh.edu" id="">
                     </div>
 
                     <div class="form-row">
                         <label for="password">Password</label>
-                       <input type="password" name=" password" id="password" placeholder="Password"> 
-                    </div>
-
-                    <div class="form-row">
-                        <label for="age"></label>
+                       <input type="password" name=" password" id="pass" placeholder="Password"> 
                     </div>
 
                     <div class="form-row">
@@ -75,60 +71,16 @@
             </fieldset>
         </form>
 
-
         <ol>
-            <li>What is JavaScript? How did it get its name?</li>
-            <p>JavaScript is a language for creating interactive websites./It was named to capitalize on Java’s popularity, though they are different languages.</p>
-            
-            <li>hat are the two ways you can run JavaScript?</li>
-            <p>In the browser. On the server with Node.js</p>
-            
-            <li>What was the most popular front-end js library?</li>
-            <p>jQuery was the most popular in the past.</p>
-            
-         <li>What is the most popular front-end js library today?</li>
-            <p>React is the most popular today.</p>
-            
+            <li>What is AJAX?</li>
+                <p>It is a way to intereact with your page without reload it</p>
+            <li>Why do you put your JS Code in a separate file?</li>
+                <p>It helps your organize your code, and also makes easier to read and maintain.</p>
         </ol>
     </main>
 
     <footer>
         <p>&copy2025 Jhonattan Rabello </p>
     </footer>
-    <script>
-        document.getElementById('myForm').addEventListener('submit', function(evnet){
-            event.preventDefault();
-
-            const fullname = document.getElementById('fullname').value;
-            const email = document.getElementById('email').value;
-            const password = document.getElementById('password').value;
-            const state = document.getElementById('state').value;
-
-
-            if (!fullname) {
-                alert("you need to digit your name.");
-                return;
-            }
-
-            
-            if (!password) {
-                alert("you need to digit your password.");
-                return;
-            }
-
-
-            const formData = {
-                fullname: fullname,
-                email: email,
-                password: password
-            };
-
-            console.log(formData)
-        });
-
-
-
-    </script>
-
 </body>
 </html>
